@@ -26,7 +26,7 @@ export default function WatchlistModal({ open, onClose }) {
 
   useEffect(() => {
     if (open) fetchWatchlist();
-  }, [open]);
+  }, [open, fetchWatchlist]);
 
   const addToken = async () => {
     if (!address || !input) return;

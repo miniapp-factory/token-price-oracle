@@ -3,7 +3,7 @@ import axios from 'axios';
 export async function getPriceData(symbol: string) {
   const coinId = symbol.toLowerCase();
   const res = await axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}`);
-  const { market_data, id } = res.data;
+  const { market_data } = res.data;
   return {
     symbol,
     currentPrice: market_data.current_price.usd,
