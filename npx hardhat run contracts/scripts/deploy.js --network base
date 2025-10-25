@@ -1,0 +1,8 @@
+
+## API
+
+- `GET /api/prices?symbol=ETH` – fetches price data from CoinGecko.
+
+## License
+
+MIT
